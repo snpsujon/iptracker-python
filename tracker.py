@@ -2,6 +2,7 @@
 #a simple python script
 #visit : https://snpsujon.me
 #github : https://github.com/snpsujon
+#youtube : https://www.youtube.com/snpsujon
 
 import urllib2
 import json
@@ -23,7 +24,7 @@ while True:
     else:
         #ipstack
         api = "http://api.ipstack.com/"
-        load = urllib2.urlopen(api + ip + '?access_key=fd0c1eae3c2d27ee676af0db2b864b0e')
+        load = urllib2.urlopen(api + ip + '?access_key=fd0c1eae3c2d27ee676af0db2b864b0e')  #use own api from ipstack.com 
         read = load.read()
         result = json.loads(read)
 
